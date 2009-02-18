@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>RSpec results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <style type="text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 80%;
+  }
+  </style>
+  <script type="text/javascript">
+    // <![CDATA[
+function moveProgressBar(percentDone) {
+  document.getElementById("rspec-header").style.width = percentDone +"%";
+}
+function makeRed(element_id) {
+  document.getElementById(element_id).style.background = '#C40D0D';
+  document.getElementById(element_id).style.color = '#FFFFFF';
+}
+
+function makeYellow(element_id) {
+  if (element_id == "rspec-header" && document.getElementById(element_id).style.background != '#C40D0D')
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+  else
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+}
+
+    // ]]>
+  </script>
+  <style type="text/css">
+#rspec-header {
+  background: #65C400; color: #fff; height: 42px;
+}
+
+.rspec-report h1 {
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 1.8em;
+  float: left;
+}
+
+#summary {
+  margin: 0; padding: 5px 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  text-align: right;
+  top: 0px;
+  right: 0px;
+  float:right;
+}
+
+#summary p {
+  margin: 0 0 0 2px;
+}
+
+#summary #totals {
+  font-size: 1.2em;
+}
+
+.example_group {
+  margin: 0 10px 5px;
+  background: #fff;
+}
+
+dl {
+  margin: 0; padding: 0 0 5px;
+  font: normal 11px "Lucida Grande", Helvetica, sans-serif;
+}
+
+dt {
+  padding: 3px;
+  background: #65C400;
+  color: #fff;
+  font-weight: bold;
+}
+
+dd {
+  margin: 5px 0 5px 5px;
+  padding: 3px 3px 3px 18px;
+}
+
+dd.spec.passed {
+  border-left: 5px solid #65C400;
+  border-bottom: 1px solid #65C400;
+  background: #DBFFB4; color: #3D7700;
+}
+
+dd.spec.failed {
+  border-left: 5px solid #C20000;
+  border-bottom: 1px solid #C20000;
+  color: #C20000; background: #FFFBD3;
+}
+
+dd.spec.not_implemented {
+  border-left: 5px solid #FAF834;
+  border-bottom: 1px solid #FAF834;
+  background: #FCFB98; color: #131313;
+}
+
+dd.spec.pending_fixed {
+  border-left: 5px solid #0000C2;
+  border-bottom: 1px solid #0000C2;
+  color: #0000C2; background: #D3FBFF;
+}
+
+.backtrace {
+  color: #000;
+  font-size: 12px;
+}
+
+a {
+  color: #BE5C00;
+}
+
+/* Ruby code, style similar to vibrant ink */
+.ruby {
+  font-size: 12px;
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  padding: 0.1em 0 0.2em 0;
+}
+
+.ruby .keyword { color: #FF6600; }
+.ruby .constant { color: #339999; }
+.ruby .attribute { color: white; }
+.ruby .global { color: white; }
+.ruby .module { color: white; }
+.ruby .class { color: white; }
+.ruby .string { color: #66FF00; }
+.ruby .ident { color: white; }
+.ruby .method { color: #FFCC00; }
+.ruby .number { color: white; }
+.ruby .char { color: white; }
+.ruby .comment { color: #9933CC; }
+.ruby .symbol { color: white; }
+.ruby .regex { color: #44B4CC; }
+.ruby .punct { color: white; }
+.ruby .escape { color: white; }
+.ruby .interp { color: white; }
+.ruby .expr { color: white; }
+
+.ruby .offending { background-color: gray; }
+.ruby .linenum {
+  width: 75px;
+  padding: 0.1em 1em 0.2em 0;
+  color: #000000;
+  background-color: #FFFBD3;
+}
+
+  </style>
+</head>
+<body>
+<div class="rspec-report">
+
+<div id="rspec-header">
+  <div id="label">
+    <h1>RSpec Results</h1>
+  </div>
+
+  <div id="summary">
+    <p id="totals">&nbsp;</p>
+    <p id="duration">&nbsp;</p>
+  </div>
+</div>
+
+<div class="results">
+<div class="example_group">
+  <dl>
+  <dt id="example_group_1">When recognizing requests, a basic resource collection route</dt>
+    <script type="text/javascript">moveProgressBar('0.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'index' route</span></dd>
+    <script type="text/javascript">moveProgressBar('1.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'new' route</span></dd>
+    <script type="text/javascript">moveProgressBar('2.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'create' route</span></dd>
+    <script type="text/javascript">moveProgressBar('3.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'show' route</span></dd>
+    <script type="text/javascript">moveProgressBar('4.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'edit' route</span></dd>
+    <script type="text/javascript">moveProgressBar('5.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'update' route</span></dd>
+    <script type="text/javascript">moveProgressBar('6.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'delete' route</span></dd>
+    <script type="text/javascript">moveProgressBar('7.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'destroy' route</span></dd>
+    <script type="text/javascript">moveProgressBar('8.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match put or delete on the collection</span></dd>
+    <script type="text/javascript">moveProgressBar('9.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match post on the new action</span></dd>
+    <script type="text/javascript">moveProgressBar('10.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match post, put, or delete on the edit action</span></dd>
+    <script type="text/javascript">moveProgressBar('11.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match post, put, or delete on the delete action</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_2">When recognizing requests, a basic resource collection with custom </dt>
+    <script type="text/javascript">moveProgressBar('12.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'index' route</span></dd>
+    <script type="text/javascript">moveProgressBar('12.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'new' route</span></dd>
+    <script type="text/javascript">moveProgressBar('13.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'create' route</span></dd>
+    <script type="text/javascript">moveProgressBar('14.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'show' route</span></dd>
+    <script type="text/javascript">moveProgressBar('15.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'edit' route</span></dd>
+    <script type="text/javascript">moveProgressBar('16.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with an 'update' route</span></dd>
+    <script type="text/javascript">moveProgressBar('17.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'delete' route</span></dd>
+    <script type="text/javascript">moveProgressBar('18.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should provide blogposts with a 'destroy' route</span></dd>
+    <script type="text/javascript">moveProgressBar('19.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match a numeric ID for the routes</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_3">When recognizing requests, a customized resource collection route</dt>
+    <script type="text/javascript">moveProgressBar('20.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to change the controller that the resource points to</span></dd>
+    <script type="text/javascript">moveProgressBar('21.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to specify the namespace with :controller_prefix</span></dd>
+    <script type="text/javascript">moveProgressBar('22.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to specify the namespace with :namespace</span></dd>
+    <script type="text/javascript">moveProgressBar('23.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to set the path prefix</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_4">When recognizing requests, a plural resource with extra actions specified through the options</dt>
+    <script type="text/javascript">moveProgressBar('24.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra get methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('25.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /one on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('25.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /one on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('26.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /one on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('27.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra post methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('28.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('29.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('30.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('31.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra put methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('32.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /three on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('33.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /three on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('34.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /three on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('35.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra delete methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('36.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /four on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('37.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /four on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('37.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /four on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('38.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra get methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('39.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('40.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on put to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('41.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('42.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra post methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('43.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('44.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on put to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('45.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('46.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra put methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('47.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('48.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('49.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('50.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra delete methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('50.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('51.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('52.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on put to anything</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_5">When recognizing requests, a plural resource with extra actions specified in the block</dt>
+    <script type="text/javascript">moveProgressBar('53.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra get methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('54.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /one on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('55.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /one on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('56.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /one on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('57.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra post methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('58.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('59.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('60.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /two on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('61.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra put methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('62.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /three on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('62.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /three on delete to destroy</span></dd>
+    <script type="text/javascript">moveProgressBar('63.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /three on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('64.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra delete methods on the collection with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('65.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /four on get to show</span></dd>
+    <script type="text/javascript">moveProgressBar('66.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should still route /four on put to update</span></dd>
+    <script type="text/javascript">moveProgressBar('67.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match /four on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('68.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra get methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('69.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('70.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on put to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('71.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /five on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('72.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra post methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('73.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('74.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on put to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('75.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /six on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('75.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra put methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('76.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('77.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('78.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /seven on delete to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('79.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to add extra delete methods on the member with an optional :format</span></dd>
+    <script type="text/javascript">moveProgressBar('80.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on get to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('81.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on post to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('82.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not route /eight on put to anything</span></dd>
+    <script type="text/javascript">moveProgressBar('83.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should work without the :to option</span></dd>
+    <script type="text/javascript">moveProgressBar('84.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should work without the :method option</span></dd>
+    <script type="text/javascript">moveProgressBar('85.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to map the same path with different methods to different actions for collection routes</span></dd>
+    <script type="text/javascript">moveProgressBar('86.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to map the same path with different methods to different actions for member routes</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_6">When recognizing requests, a resource route with multiple custom keys</dt>
+    <script type="text/javascript">moveProgressBar('87.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should match a get to /emails/bidule/merbivore_com to the  emails controller and the show action with username =&gt; 'bidule', domain =&gt; 'merbivore_com'</span></dd>
+    <script type="text/javascript">moveProgressBar('87.9');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should match a put to /emails/bidule/merbivore_com to the  emails controller and the update action with username =&gt; 'bidule', domain =&gt; 'merbivore_com'</span></dd>
+    <script type="text/javascript">moveProgressBar('88.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should match a delete to /emails/bidule/merbivore_com to the  emails controller and the destroy action with username =&gt; 'bidule', domain =&gt; 'merbivore_com'</span></dd>
+    <script type="text/javascript">moveProgressBar('89.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should match a get to /emails/bidule/merbivore_com/edit to the  emails controller and the destroy action with username =&gt; 'bidule', domain =&gt; 'merbivore_com'</span></dd>
+    <script type="text/javascript">moveProgressBar('90.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should not match a put to /emails/bidule/merbivore_com/edit</span></dd>
+    <script type="text/javascript">moveProgressBar('91.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should match a get to /emails/bidule/merbivore_com/delete to the emails controller and the delete action with username =&gt; 'bidule', domain =&gt; 'merbivore_com'</span></dd>
+    <script type="text/javascript">moveProgressBar('92.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to set matches on each key</span></dd>
+    <script type="text/javascript">moveProgressBar('93.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should be able to set matches on a single key</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_7">When recognizing requests, a resource an identify</dt>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('example_group_7');</script>
+    <script type="text/javascript">moveProgressBar('94.4');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should set the keys for the resource when the identify wraps the resource declaration</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>uninitialized constant Merb::Router::Behavior::Proxy::Email</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/router/recognition/resources_spec.rb:282:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/router/recognition/resources_spec.rb:281:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">280</span>    it "should set the keys for the resource when the identify wraps the resource declaration" do
+<span class="linenum">281</span>      Merb::Router.prepare do
+<span class="offending"><span class="linenum">282</span>        identify Email => :address do</span>
+<span class="linenum">283</span>          resources :emails
+<span class="linenum">284</span>        end
+<span class="linenum">285</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('95.3');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should set the keys for the resource when the identify is specified inline</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>Expected :controller to be nil, but was &quot;emails&quot;
+Expected :action to be nil, but was &quot;show&quot;
+Expected :id to be nil, but was &quot;hello&quot;
+Got {:controller=&gt;&quot;emails&quot;, :action=&gt;&quot;show&quot;, :id=&gt;&quot;hello&quot;, :format=&gt;nil}</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/router/recognition/resources_spec.rb:295:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">293</span>      end
+<span class="linenum">294</span>      
+<span class="offending"><span class="linenum">295</span>      route_for('/emails/hello').should have_route(:id => nil, :address => "hello")</span>
+<span class="linenum">296</span>    end
+<span class="linenum">297</span>    
+<span class="linenum">298</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('96.2');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should give precedance to the :keys option over a parent #identify</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>uninitialized constant Merb::Router::Behavior::Proxy::Email</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/router/recognition/resources_spec.rb:300:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/router/recognition/resources_spec.rb:299:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">298</span>    it "should give precedance to the :keys option over a parent #identify" do
+<span class="linenum">299</span>      Merb::Router.prepare do
+<span class="offending"><span class="linenum">300</span>        identify Email => :address do</span>
+<span class="linenum">301</span>          resources :emails, :key => :email
+<span class="linenum">302</span>        end
+<span class="linenum">303</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('97.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should give precedance to the :keys option over the :identify option</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_8">When recognizing requests, a resource route with a single custom key</dt>
+    <script type="text/javascript">moveProgressBar('98.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should use the specified key specified with :key in the params hash</span></dd>
+    <script type="text/javascript">moveProgressBar('99.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should use the specified key specified with :keys in the params hash</span></dd>
+    <script type="text/javascript">moveProgressBar('100.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should give precedence to :keys</span></dd>
+  </dl>
+</div>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>1.728537 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "108 examples, 3 failures";</script>
+</div>
+</div>
+</body>
+</html>

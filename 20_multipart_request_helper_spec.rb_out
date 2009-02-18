@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>RSpec results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <style type="text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 80%;
+  }
+  </style>
+  <script type="text/javascript">
+    // <![CDATA[
+function moveProgressBar(percentDone) {
+  document.getElementById("rspec-header").style.width = percentDone +"%";
+}
+function makeRed(element_id) {
+  document.getElementById(element_id).style.background = '#C40D0D';
+  document.getElementById(element_id).style.color = '#FFFFFF';
+}
+
+function makeYellow(element_id) {
+  if (element_id == "rspec-header" && document.getElementById(element_id).style.background != '#C40D0D')
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+  else
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+}
+
+    // ]]>
+  </script>
+  <style type="text/css">
+#rspec-header {
+  background: #65C400; color: #fff; height: 42px;
+}
+
+.rspec-report h1 {
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 1.8em;
+  float: left;
+}
+
+#summary {
+  margin: 0; padding: 5px 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  text-align: right;
+  top: 0px;
+  right: 0px;
+  float:right;
+}
+
+#summary p {
+  margin: 0 0 0 2px;
+}
+
+#summary #totals {
+  font-size: 1.2em;
+}
+
+.example_group {
+  margin: 0 10px 5px;
+  background: #fff;
+}
+
+dl {
+  margin: 0; padding: 0 0 5px;
+  font: normal 11px "Lucida Grande", Helvetica, sans-serif;
+}
+
+dt {
+  padding: 3px;
+  background: #65C400;
+  color: #fff;
+  font-weight: bold;
+}
+
+dd {
+  margin: 5px 0 5px 5px;
+  padding: 3px 3px 3px 18px;
+}
+
+dd.spec.passed {
+  border-left: 5px solid #65C400;
+  border-bottom: 1px solid #65C400;
+  background: #DBFFB4; color: #3D7700;
+}
+
+dd.spec.failed {
+  border-left: 5px solid #C20000;
+  border-bottom: 1px solid #C20000;
+  color: #C20000; background: #FFFBD3;
+}
+
+dd.spec.not_implemented {
+  border-left: 5px solid #FAF834;
+  border-bottom: 1px solid #FAF834;
+  background: #FCFB98; color: #131313;
+}
+
+dd.spec.pending_fixed {
+  border-left: 5px solid #0000C2;
+  border-bottom: 1px solid #0000C2;
+  color: #0000C2; background: #D3FBFF;
+}
+
+.backtrace {
+  color: #000;
+  font-size: 12px;
+}
+
+a {
+  color: #BE5C00;
+}
+
+/* Ruby code, style similar to vibrant ink */
+.ruby {
+  font-size: 12px;
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  padding: 0.1em 0 0.2em 0;
+}
+
+.ruby .keyword { color: #FF6600; }
+.ruby .constant { color: #339999; }
+.ruby .attribute { color: white; }
+.ruby .global { color: white; }
+.ruby .module { color: white; }
+.ruby .class { color: white; }
+.ruby .string { color: #66FF00; }
+.ruby .ident { color: white; }
+.ruby .method { color: #FFCC00; }
+.ruby .number { color: white; }
+.ruby .char { color: white; }
+.ruby .comment { color: #9933CC; }
+.ruby .symbol { color: white; }
+.ruby .regex { color: #44B4CC; }
+.ruby .punct { color: white; }
+.ruby .escape { color: white; }
+.ruby .interp { color: white; }
+.ruby .expr { color: white; }
+
+.ruby .offending { background-color: gray; }
+.ruby .linenum {
+  width: 75px;
+  padding: 0.1em 1em 0.2em 0;
+  color: #000000;
+  background-color: #FFFBD3;
+}
+
+  </style>
+</head>
+<body>
+<div class="rspec-report">
+
+<div id="rspec-header">
+  <div id="label">
+    <h1>RSpec Results</h1>
+  </div>
+
+  <div id="summary">
+    <p id="totals">&nbsp;</p>
+    <p id="duration">&nbsp;</p>
+  </div>
+</div>
+
+<div class="results">
+<div class="example_group">
+  <dl>
+  <dt id="example_group_1">Merb::Test::MultipartRequestHelper#dispatch_multipart_to</dt>
+    <script type="text/javascript">moveProgressBar('8.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should dispatch to the given controller and action</span></dd>
+    <script type="text/javascript">moveProgressBar('16.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should dispatch to the given controller and action with params</span></dd>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('example_group_1');</script>
+    <script type="text/javascript">moveProgressBar('25.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should handle a file object when used as a param</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>expected: &quot;text/plain&quot;,
+     got: &quot;[#&lt;MIME::Type:0x160ba0c @content_type=\&quot;text/plain\&quot;, @raw_media_type=\&quot;text\&quot;, @raw_sub_type=\&quot;plain\&quot;, @simplified=\&quot;text/plain\&quot;, @media_type=\&quot;text\&quot;, @sub_type=\&quot;plain\&quot;, @extensions=[\&quot;txt\&quot;, \&quot;asc\&quot;, \&quot;c\&quot;, \&quot;cc\&quot;, \&quot;h\&quot;, \&quot;hh\&quot;, \&quot;cpp\&quot;, \&quot;hpp\&quot;, \&quot;dat\&quot;, \&quot;hlp\&quot;], @encoding=\&quot;quoted-printable\&quot;, @system=nil, @registered=true, @obsolete=nil, @url=[\&quot;RFC2046\&quot;, \&quot;RFC3676\&quot;]&gt;]&quot; (using ==)</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:37:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:34:in `open'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:34:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">35</span>        controller = dispatch_multipart_to(@controller_klass, :show, :my_file => file)
+<span class="linenum">36</span>        file_params = controller.params[:my_file]
+<span class="offending"><span class="linenum">37</span>        file_params[:content_type].should == "text/plain"</span>
+<span class="linenum">38</span>        file_params[:size].should == File.size(file_name)
+<span class="linenum">39</span>        file_params[:tempfile].should be_a_kind_of(File)
+<span class="linenum">40</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_2">Merb::Test::MultipartRequestHelper#multipart_post</dt>
+    <script type="text/javascript">makeRed('example_group_2');</script>
+    <script type="text/javascript">moveProgressBar('33.3');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should post to the create action with params</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>undefined method `resources' for nil:NilClass</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:48:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:47:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">46</span>    before(:each) do
+<span class="linenum">47</span>      Merb::Router.prepare do |r|
+<span class="offending"><span class="linenum">48</span>        r.resources :spec_helper_controller</span>
+<span class="linenum">49</span>      end
+<span class="linenum">50</span>    end
+<span class="linenum">51</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('41.6');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should upload a file to the action using multipart</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>undefined method `resources' for nil:NilClass</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:48:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:47:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">46</span>    before(:each) do
+<span class="linenum">47</span>      Merb::Router.prepare do |r|
+<span class="offending"><span class="linenum">48</span>        r.resources :spec_helper_controller</span>
+<span class="linenum">49</span>      end
+<span class="linenum">50</span>    end
+<span class="linenum">51</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_3">Merb::Test::MultipartRequestHelper#multipart_put</dt>
+    <script type="text/javascript">makeRed('example_group_3');</script>
+    <script type="text/javascript">moveProgressBar('50.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should put to the update action with multipart params</span>
+      <div class="failure" id="failure_4">
+        <div class="message"><pre>undefined method `resources' for nil:NilClass</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:74:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:73:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">72</span>    before(:each) do
+<span class="linenum">73</span>      Merb::Router.prepare do |r|
+<span class="offending"><span class="linenum">74</span>        r.resources :spec_helper_controller</span>
+<span class="linenum">75</span>      end
+<span class="linenum">76</span>    end
+<span class="linenum">77</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('58.3');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should upload a file to the action using multipart</span>
+      <div class="failure" id="failure_5">
+        <div class="message"><pre>undefined method `resources' for nil:NilClass</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:74:in `block (4 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `instance_eval'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router/behavior.rb:675:in `_with_proxy'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/dispatch/router.rb:105:in `prepare'
+/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:73:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">72</span>    before(:each) do
+<span class="linenum">73</span>      Merb::Router.prepare do |r|
+<span class="offending"><span class="linenum">74</span>        r.resources :spec_helper_controller</span>
+<span class="linenum">75</span>      end
+<span class="linenum">76</span>    end
+<span class="linenum">77</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_4">Merb::Test::MultipartRequestHelper::Param#to_multipart</dt>
+    <script type="text/javascript">moveProgressBar('66.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should represent the key and value correctly</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_5">Merb::Test::MultipartRequestHelper::FileParam#to_multipart</dt>
+    <script type="text/javascript">makeRed('example_group_5');</script>
+    <script type="text/javascript">moveProgressBar('75.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should represent the key, filename and content correctly</span>
+      <div class="failure" id="failure_6">
+        <div class="message"><pre>expected: &quot;Content-Disposition: form-data; name=\&quot;foo\&quot;; filename=\&quot;/bar.txt\&quot;\r\nContent-Type: text/plain\r\n\r\nbaz\r\n&quot;,
+     got: &quot;Content-Disposition: form-data; name=\&quot;foo\&quot;; filename=\&quot;/bar.txt\&quot;\r\nContent-Type: [#&lt;MIME::Type:0x160ba0c @content_type=\&quot;text/plain\&quot;, @raw_media_type=\&quot;text\&quot;, @raw_sub_type=\&quot;plain\&quot;, @simplified=\&quot;text/plain\&quot;, @media_type=\&quot;text\&quot;, @sub_type=\&quot;plain\&quot;, @extensions=[\&quot;txt\&quot;, \&quot;asc\&quot;, \&quot;c\&quot;, \&quot;cc\&quot;, \&quot;h\&quot;, \&quot;hh\&quot;, \&quot;cpp\&quot;, \&quot;hpp\&quot;, \&quot;dat\&quot;, \&quot;hlp\&quot;], @encoding=\&quot;quoted-printable\&quot;, @system=nil, @registered=true, @obsolete=nil, @url=[\&quot;RFC2046\&quot;, \&quot;RFC3676\&quot;]&gt;]\r\n\r\nbaz\r\n&quot; (using ==)</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:115:in `block (2 levels) in <module:MultipartRequestHelper>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">113</span>    it "should represent the key, filename and content correctly" do
+<span class="linenum">114</span>      param = FileParam.new('foo', '/bar.txt', 'baz')
+<span class="offending"><span class="linenum">115</span>      param.to_multipart.should == %(Content-Disposition: form-data; name="foo"; filename="/bar.txt"\r\nContent-Type: text/plain\r\n\r\nbaz\r\n)</span>
+<span class="linenum">116</span>    end
+<span class="linenum">117</span>  end
+<span class="linenum">118</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_6">Merb::Test::MultipartRequestHelper::Post#push_params(params) param parsing</dt>
+    <script type="text/javascript">moveProgressBar('83.3');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should create Param from params when param doesn't respond to read</span></dd>
+    <script type="text/javascript">moveProgressBar('91.6');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should create FileParam from params when param does response to read</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_7">Merb::Test::MultipartRequestHelper::Post#to_multipart</dt>
+    <script type="text/javascript">makeRed('example_group_7');</script>
+    <script type="text/javascript">moveProgressBar('100.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should create a multipart request from the params</span>
+      <div class="failure" id="failure_7">
+        <div class="message"><pre>expected: &quot;------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\&quot;file\&quot;; filename=\&quot;file.txt\&quot;\r\nContent-Type: text/plain\r\n\r\nfile contents\r\n------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\&quot;normal\&quot;\r\n\r\nnormal_param\r\n------------0xKhTmLbOuNdArY--&quot;,
+     got: &quot;------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\&quot;file\&quot;; filename=\&quot;file.txt\&quot;\r\nContent-Type: [#&lt;MIME::Type:0x160ba0c @content_type=\&quot;text/plain\&quot;, @raw_media_type=\&quot;text\&quot;, @raw_sub_type=\&quot;plain\&quot;, @simplified=\&quot;text/plain\&quot;, @media_type=\&quot;text\&quot;, @sub_type=\&quot;plain\&quot;, @extensions=[\&quot;txt\&quot;, \&quot;asc\&quot;, \&quot;c\&quot;, \&quot;cc\&quot;, \&quot;h\&quot;, \&quot;hh\&quot;, \&quot;cpp\&quot;, \&quot;hpp\&quot;, \&quot;dat\&quot;, \&quot;hlp\&quot;], @encoding=\&quot;quoted-printable\&quot;, @system=nil, @registered=true, @obsolete=nil, @url=[\&quot;RFC2046\&quot;, \&quot;RFC3676\&quot;]&gt;]\r\n\r\nfile contents\r\n------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\&quot;normal\&quot;\r\n\r\nnormal_param\r\n------------0xKhTmLbOuNdArY--&quot; (using ==)</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/test/20_multipart_request_helper_spec.rb:149:in `block (2 levels) in <module:MultipartRequestHelper>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">147</span>      query, content_type = multipart.to_multipart
+<span class="linenum">148</span>      content_type.should == "multipart/form-data, boundary=----------0xKhTmLbOuNdArY"
+<span class="offending"><span class="linenum">149</span>      query.should == "------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"file.txt\"\r\nContent-Type: text/plain\r\n\r\nfile contents\r\n------------0xKhTmLbOuNdArY\r\nContent-Disposition: form-data; name=\"normal\"\r\n\r\nnormal_param\r\n------------0xKhTmLbOuNdArY--"</span>
+<span class="linenum">150</span>    end
+<span class="linenum">151</span>  end
+<span class="linenum">152</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.120219 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "12 examples, 7 failures";</script>
+</div>
+</div>
+</body>
+</html>

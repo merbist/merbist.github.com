@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html 
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>RSpec results</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Expires" content="-1" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <style type="text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 80%;
+  }
+  </style>
+  <script type="text/javascript">
+    // <![CDATA[
+function moveProgressBar(percentDone) {
+  document.getElementById("rspec-header").style.width = percentDone +"%";
+}
+function makeRed(element_id) {
+  document.getElementById(element_id).style.background = '#C40D0D';
+  document.getElementById(element_id).style.color = '#FFFFFF';
+}
+
+function makeYellow(element_id) {
+  if (element_id == "rspec-header" && document.getElementById(element_id).style.background != '#C40D0D')
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+  else
+  {
+    document.getElementById(element_id).style.background = '#FAF834';
+    document.getElementById(element_id).style.color = '#000000';
+  }
+}
+
+    // ]]>
+  </script>
+  <style type="text/css">
+#rspec-header {
+  background: #65C400; color: #fff; height: 42px;
+}
+
+.rspec-report h1 {
+  margin: 0px 10px 0px 10px;
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  font-size: 1.8em;
+  float: left;
+}
+
+#summary {
+  margin: 0; padding: 5px 10px;
+  font-family: "Lucida Grande", Helvetica, sans-serif;
+  text-align: right;
+  top: 0px;
+  right: 0px;
+  float:right;
+}
+
+#summary p {
+  margin: 0 0 0 2px;
+}
+
+#summary #totals {
+  font-size: 1.2em;
+}
+
+.example_group {
+  margin: 0 10px 5px;
+  background: #fff;
+}
+
+dl {
+  margin: 0; padding: 0 0 5px;
+  font: normal 11px "Lucida Grande", Helvetica, sans-serif;
+}
+
+dt {
+  padding: 3px;
+  background: #65C400;
+  color: #fff;
+  font-weight: bold;
+}
+
+dd {
+  margin: 5px 0 5px 5px;
+  padding: 3px 3px 3px 18px;
+}
+
+dd.spec.passed {
+  border-left: 5px solid #65C400;
+  border-bottom: 1px solid #65C400;
+  background: #DBFFB4; color: #3D7700;
+}
+
+dd.spec.failed {
+  border-left: 5px solid #C20000;
+  border-bottom: 1px solid #C20000;
+  color: #C20000; background: #FFFBD3;
+}
+
+dd.spec.not_implemented {
+  border-left: 5px solid #FAF834;
+  border-bottom: 1px solid #FAF834;
+  background: #FCFB98; color: #131313;
+}
+
+dd.spec.pending_fixed {
+  border-left: 5px solid #0000C2;
+  border-bottom: 1px solid #0000C2;
+  color: #0000C2; background: #D3FBFF;
+}
+
+.backtrace {
+  color: #000;
+  font-size: 12px;
+}
+
+a {
+  color: #BE5C00;
+}
+
+/* Ruby code, style similar to vibrant ink */
+.ruby {
+  font-size: 12px;
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  padding: 0.1em 0 0.2em 0;
+}
+
+.ruby .keyword { color: #FF6600; }
+.ruby .constant { color: #339999; }
+.ruby .attribute { color: white; }
+.ruby .global { color: white; }
+.ruby .module { color: white; }
+.ruby .class { color: white; }
+.ruby .string { color: #66FF00; }
+.ruby .ident { color: white; }
+.ruby .method { color: #FFCC00; }
+.ruby .number { color: white; }
+.ruby .char { color: white; }
+.ruby .comment { color: #9933CC; }
+.ruby .symbol { color: white; }
+.ruby .regex { color: #44B4CC; }
+.ruby .punct { color: white; }
+.ruby .escape { color: white; }
+.ruby .interp { color: white; }
+.ruby .expr { color: white; }
+
+.ruby .offending { background-color: gray; }
+.ruby .linenum {
+  width: 75px;
+  padding: 0.1em 1em 0.2em 0;
+  color: #000000;
+  background-color: #FFFBD3;
+}
+
+  </style>
+</head>
+<body>
+<div class="rspec-report">
+
+<div id="rspec-header">
+  <div id="label">
+    <h1>RSpec Results</h1>
+  </div>
+
+  <div id="summary">
+    <p id="totals">&nbsp;</p>
+    <p id="duration">&nbsp;</p>
+  </div>
+</div>
+
+<div class="results">
+<div class="example_group">
+  <dl>
+  <dt id="example_group_1">Merb Command Line Options</dt>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
+    <script type="text/javascript">makeYellow('example_group_1');</script>
+    <script type="text/javascript">moveProgressBar('2.8');</script>
+    <dd class="spec not_implemented"><span class="not_implemented_spec_name">should allow -l / --log_level to set the log_level (PENDING: How do we spec these?)</span></dd>
+    <script type="text/javascript">makeYellow('rspec-header');</script>
+    <script type="text/javascript">makeYellow('example_group_1');</script>
+    <script type="text/javascript">moveProgressBar('5.7');</script>
+    <dd class="spec not_implemented"><span class="not_implemented_spec_name">should allow -L / --log_file  to set the log_file (PENDING: How do we spec these?)</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_2">Merb::Logger#new</dt>
+    <script type="text/javascript">moveProgressBar('8.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should call set_log with the arguments it was passed.</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_3">Merb::Logger#set_log</dt>
+    <script type="text/javascript">moveProgressBar('11.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should set the log level to :warn (4) when second parameter is :warn</span></dd>
+    <script type="text/javascript">moveProgressBar('14.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should set the log level to :debug (0) when Merb.environment is development</span></dd>
+    <script type="text/javascript">moveProgressBar('17.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should set the log level to :error (6) when Merb.environment is production</span></dd>
+    <script type="text/javascript">moveProgressBar('20.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should default the delimiter to ' ~ '</span></dd>
+    <script type="text/javascript">makeRed('rspec-header');</script>
+    <script type="text/javascript">makeRed('example_group_3');</script>
+    <script type="text/javascript">moveProgressBar('22.8');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">allows level value be specified as a String</span>
+      <div class="failure" id="failure_1">
+        <div class="message"><pre>expected: 4,
+     got: &quot;warn&quot; (using ==)</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:67:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">65</span>      Merb::Config[:log_level] = 'warn'
+<span class="linenum">66</span>      Merb.reset_logger!
+<span class="offending"><span class="linenum">67</span>      Merb.logger.level.should == 4</span>
+<span class="linenum">68</span>    end
+<span class="linenum">69</span>  end
+<span class="linenum">70</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_4">Merb::Logger#flush</dt>
+    <script type="text/javascript">moveProgressBar('25.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">should immediately return if the buffer is empty</span></dd>
+    <script type="text/javascript">makeRed('example_group_4');</script>
+    <script type="text/javascript">moveProgressBar('28.5');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">should call the write_method with the stringified contents of the buffer if the buffer is non-empty</span>
+      <div class="failure" id="failure_2">
+        <div class="message"><pre>expected: &quot; ~ a message\n ~ another message\n&quot;,
+     got: &quot;[\&quot; ~ a message\\n\&quot;, \&quot; ~ another message\\n\&quot;]&quot; (using ==)</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:89:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">87</span>      Merb.logger.flush
+<span class="linenum">88</span>
+<span class="offending"><span class="linenum">89</span>      Merb::Config[:log_stream].string.should == " ~ a message\n ~ another message\n"</span>
+<span class="linenum">90</span>    end
+<span class="linenum">91</span>
+<span class="linenum">92</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_5">Merb::Logger#debug</dt>
+    <script type="text/javascript">makeRed('example_group_5');</script>
+    <script type="text/javascript">moveProgressBar('31.4');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with debug level</span>
+      <div class="failure" id="failure_3">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x210582c&gt; to log with method debug, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:132:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">130</span>    it "adds to the buffer with debug level" do
+<span class="linenum">131</span>      set_level(:debug)
+<span class="offending"><span class="linenum">132</span>      Merb.logger.should log_with_method(:debug)</span>
+<span class="linenum">133</span>    end
+<span class="linenum">134</span>
+<span class="linenum">135</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('34.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with info level</span></dd>
+    <script type="text/javascript">moveProgressBar('37.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with warn level</span></dd>
+    <script type="text/javascript">moveProgressBar('40.0');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with error level</span></dd>
+    <script type="text/javascript">moveProgressBar('42.8');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with fatal level</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_6">Merb::Logger#info</dt>
+    <script type="text/javascript">makeRed('example_group_6');</script>
+    <script type="text/javascript">moveProgressBar('45.7');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with debug level</span>
+      <div class="failure" id="failure_4">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21bb744&gt; to log with method info, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:164:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">162</span>    it "adds to the buffer with debug level" do
+<span class="linenum">163</span>      set_level(:debug)
+<span class="offending"><span class="linenum">164</span>      Merb.logger.should log_with_method(:info)</span>
+<span class="linenum">165</span>    end
+<span class="linenum">166</span>
+<span class="linenum">167</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('48.5');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with info level</span>
+      <div class="failure" id="failure_5">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21bd06c&gt; to log with method info, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:169:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">167</span>    it "adds to the buffer with info level" do
+<span class="linenum">168</span>      set_level(:info)
+<span class="offending"><span class="linenum">169</span>      Merb.logger.should log_with_method(:info)</span>
+<span class="linenum">170</span>    end
+<span class="linenum">171</span>
+<span class="linenum">172</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('51.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with warn level</span></dd>
+    <script type="text/javascript">moveProgressBar('54.2');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with error level</span></dd>
+    <script type="text/javascript">moveProgressBar('57.1');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with fatal level</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_7">Merb::Logger#warn</dt>
+    <script type="text/javascript">makeRed('example_group_7');</script>
+    <script type="text/javascript">moveProgressBar('60.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with debug level</span>
+      <div class="failure" id="failure_6">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21cf500&gt; to log with method warn, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:196:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">194</span>    it "adds to the buffer with debug level" do
+<span class="linenum">195</span>      set_level(:debug)
+<span class="offending"><span class="linenum">196</span>      Merb.logger.should log_with_method(:warn)</span>
+<span class="linenum">197</span>    end
+<span class="linenum">198</span>
+<span class="linenum">199</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('62.8');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with info level</span>
+      <div class="failure" id="failure_7">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21d0e28&gt; to log with method warn, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:201:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">199</span>    it "adds to the buffer with info level" do
+<span class="linenum">200</span>      set_level(:info)
+<span class="offending"><span class="linenum">201</span>      Merb.logger.should log_with_method(:warn)</span>
+<span class="linenum">202</span>    end
+<span class="linenum">203</span>
+<span class="linenum">204</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('65.7');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with warn level</span>
+      <div class="failure" id="failure_8">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21da7ac&gt; to log with method warn, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:206:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">204</span>    it "adds to the buffer with warn level" do
+<span class="linenum">205</span>      set_level(:warn)
+<span class="offending"><span class="linenum">206</span>      Merb.logger.should log_with_method(:warn)</span>
+<span class="linenum">207</span>    end
+<span class="linenum">208</span>
+<span class="linenum">209</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('68.5');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with error level</span></dd>
+    <script type="text/javascript">moveProgressBar('71.4');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with fatal level</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_8">Merb::Logger#error</dt>
+    <script type="text/javascript">makeRed('example_group_8');</script>
+    <script type="text/javascript">moveProgressBar('74.2');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with debug level</span>
+      <div class="failure" id="failure_9">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21e5170&gt; to log with method error, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:228:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">226</span>    it "adds to the buffer with debug level" do
+<span class="linenum">227</span>      set_level(:debug)
+<span class="offending"><span class="linenum">228</span>      Merb.logger.should log_with_method(:error)</span>
+<span class="linenum">229</span>    end
+<span class="linenum">230</span>
+<span class="linenum">231</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('77.1');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with info level</span>
+      <div class="failure" id="failure_10">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x10a71b0&gt; to log with method error, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:233:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">231</span>    it "adds to the buffer with info level" do
+<span class="linenum">232</span>      set_level(:info)
+<span class="offending"><span class="linenum">233</span>      Merb.logger.should log_with_method(:error)</span>
+<span class="linenum">234</span>    end
+<span class="linenum">235</span>
+<span class="linenum">236</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('80.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with warn level</span>
+      <div class="failure" id="failure_11">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21e94b4&gt; to log with method error, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:238:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">236</span>    it "adds to the buffer with warn level" do
+<span class="linenum">237</span>      set_level(:warn)
+<span class="offending"><span class="linenum">238</span>      Merb.logger.should log_with_method(:error)</span>
+<span class="linenum">239</span>    end
+<span class="linenum">240</span>
+<span class="linenum">241</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('82.8');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with error level</span>
+      <div class="failure" id="failure_12">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21e1624&gt; to log with method error, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:243:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">241</span>    it "adds to the buffer with error level" do
+<span class="linenum">242</span>      set_level(:error)
+<span class="offending"><span class="linenum">243</span>      Merb.logger.should log_with_method(:error)</span>
+<span class="linenum">244</span>    end
+<span class="linenum">245</span>
+<span class="linenum">246</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('85.7');</script>
+    <dd class="spec passed"><span class="passed_spec_name">does not add to the buffer with fatal level</span></dd>
+  </dl>
+</div>
+<div class="example_group">
+  <dl>
+  <dt id="example_group_9">Merb::Logger#fatal</dt>
+    <script type="text/javascript">makeRed('example_group_9');</script>
+    <script type="text/javascript">moveProgressBar('88.5');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with debug level</span>
+      <div class="failure" id="failure_13">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21d3fb0&gt; to log with method fatal, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:260:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">258</span>    it "adds to the buffer with debug level" do
+<span class="linenum">259</span>      set_level(:debug)
+<span class="offending"><span class="linenum">260</span>      Merb.logger.should log_with_method(:fatal)</span>
+<span class="linenum">261</span>    end
+<span class="linenum">262</span>
+<span class="linenum">263</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('91.4');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with info level</span>
+      <div class="failure" id="failure_14">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21cd188&gt; to log with method fatal, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:265:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">263</span>    it "adds to the buffer with info level" do
+<span class="linenum">264</span>      set_level(:info)
+<span class="offending"><span class="linenum">265</span>      Merb.logger.should log_with_method(:fatal)</span>
+<span class="linenum">266</span>    end
+<span class="linenum">267</span>
+<span class="linenum">268</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('94.2');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with warn level</span>
+      <div class="failure" id="failure_15">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21c6914&gt; to log with method fatal, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:270:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">268</span>    it "adds to the buffer with warn level" do
+<span class="linenum">269</span>      set_level(:warn)
+<span class="offending"><span class="linenum">270</span>      Merb.logger.should log_with_method(:fatal)</span>
+<span class="linenum">271</span>    end
+<span class="linenum">272</span>
+<span class="linenum">273</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('97.1');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with error level</span>
+      <div class="failure" id="failure_16">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21c0078&gt; to log with method fatal, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:275:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">273</span>    it "adds to the buffer with error level" do
+<span class="linenum">274</span>      set_level(:error)
+<span class="offending"><span class="linenum">275</span>      Merb.logger.should log_with_method(:fatal)</span>
+<span class="linenum">276</span>    end
+<span class="linenum">277</span>
+<span class="linenum">278</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+    <script type="text/javascript">moveProgressBar('100.0');</script>
+    <dd class="spec failed">
+      <span class="failed_spec_name">adds to the buffer with fatal level</span>
+      <div class="failure" id="failure_17">
+        <div class="message"><pre>Expected #&lt;Merb::Logger:0x21b92f0&gt; to log with method fatal, but it did not.</pre></div>
+        <div class="backtrace"><pre>/Users/takiuchi/project/merb19/merb-core/spec/public/logger/logger_spec.rb:280:in `block (3 levels) in <top (required)>'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_spec.rb:30:in `run_spec'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:114:in `block (4 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `fork'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:113:in `block (3 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:111:in `block (2 levels) in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `each'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:110:in `block in run_specs'
+/Users/takiuchi/project/merb19/merb-core/lib/merb-core/test/run_specs.rb:108:in `run_specs'
+/Users/takiuchi/project/merb19/merb-core/rakefile:199:in `block in setup_specs'
+/opt/dev/bin/rake:19:in `load'
+/opt/dev/bin/rake:19:in `<main>'</pre></div>
+    <pre class="ruby"><code><span class="linenum">278</span>    it "adds to the buffer with fatal level" do
+<span class="linenum">279</span>      set_level(:fatal)
+<span class="offending"><span class="linenum">280</span>      Merb.logger.should log_with_method(:fatal)</span>
+<span class="linenum">281</span>    end
+<span class="linenum">282</span>  end # #fatal
+<span class="linenum">283</span><span class="comment"># gem install syntax to get syntax highlighting</span></code></pre>
+      </div>
+    </dd>
+  </dl>
+</div>
+<script type="text/javascript">document.getElementById('duration').innerHTML = "Finished in <strong>0.123335 seconds</strong>";</script>
+<script type="text/javascript">document.getElementById('totals').innerHTML = "35 examples, 17 failures, 2 pending";</script>
+</div>
+</div>
+</body>
+</html>
